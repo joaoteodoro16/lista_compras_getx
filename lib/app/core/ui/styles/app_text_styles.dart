@@ -10,25 +10,25 @@ class AppTextStyles {
 
   static AppTextStyles get i => _i;
 
-  static const TextStyle _defaultStyle = TextStyle(
+  TextStyle get _defaultStyle => TextStyle(
     fontFamily: AppFont.MULISH
   );
 
-  static final TextStyle  textBold = _defaultStyle.copyWith(
+  TextStyle get textBold => _defaultStyle.copyWith(
     fontWeight: FontWeight.w700
   );
 
-  static final TextStyle textRegular = _defaultStyle;
+  TextStyle get textRegular => _defaultStyle;
 
-  static final TextStyle textMedium = _defaultStyle.copyWith(
+  TextStyle get textMedium => _defaultStyle.copyWith(
     fontWeight: FontWeight.w500
   );
 
-  static final TextStyle textExtraBold = _defaultStyle.copyWith(
+  TextStyle get textExtraBold => _defaultStyle.copyWith(
     fontWeight: FontWeight.w800
   );
 
-  static final TextStyle textLight = _defaultStyle.copyWith(
+  TextStyle get textLight => _defaultStyle.copyWith(
     fontWeight: FontWeight.w300
   );
   

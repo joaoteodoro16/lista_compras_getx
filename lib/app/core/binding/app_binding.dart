@@ -6,7 +6,5 @@ class AppBinding extends Bindings{
   void dependencies() {
     
   }
-  
-
 
 }
