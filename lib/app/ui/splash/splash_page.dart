@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:lista_compras_getx/app/core/routes/app_routes.dart';
 import 'package:lista_compras_getx/app/core/ui/styles/app_colors.dart';
 import 'package:lista_compras_getx/app/core/ui/styles/app_text_styles.dart';
 
@@ -15,7 +17,7 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) async{
       await Future.delayed(Duration(seconds: 2));
-      
+      Get.offAllNamed(AppRoutes.HOME);
     },);
     super.initState();
   }

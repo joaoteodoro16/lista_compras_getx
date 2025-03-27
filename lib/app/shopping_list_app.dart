@@ -3,7 +3,8 @@ import 'package:get/get.dart';
 import 'package:lista_compras_getx/app/core/binding/app_binding.dart';
 import 'package:lista_compras_getx/app/core/routes/app_routes.dart';
 import 'package:lista_compras_getx/app/core/ui/theme/app_theme.dart';
-import 'package:lista_compras_getx/app/routes/splash/splash_routes.dart';
+import 'package:lista_compras_getx/app/routes/home_routes.dart';
+import 'package:lista_compras_getx/app/routes/splash_routes.dart';
 
 class ShoppingListApp extends StatelessWidget {
 
@@ -18,6 +19,7 @@ class ShoppingListApp extends StatelessWidget {
         initialBinding: AppBinding(),
         getPages: [
           ...SplashRoutes.routers,
+          ...HomeRoutes.routers
         ],
         initialRoute: AppRoutes.INITIAL,
        );

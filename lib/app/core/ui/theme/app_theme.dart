@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lista_compras_getx/app/core/ui/styles/app_colors.dart';
 import 'package:lista_compras_getx/app/core/ui/styles/app_font.dart';
+import 'package:lista_compras_getx/app/core/ui/styles/app_text_styles.dart';
 
 class AppTheme {
   AppTheme._();
@@ -16,6 +17,13 @@ class AppTheme {
     ),
     appBarTheme: AppBarTheme(
       backgroundColor: AppColors.primary,
+      titleTextStyle: AppTextStyles.i.textMedium.copyWith(
+        color: Colors.white,
+        fontSize: 18,
+      ),
+      iconTheme: IconThemeData(
+        color: Colors.white
+      )
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
