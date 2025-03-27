@@ -1,10 +1,10 @@
 
 import 'package:get/get.dart';
 
-class AppBinding extends Bindings{
+class SplashBinding implements Bindings{
   @override
   void dependencies() {
     
   }
-
+  
 }
